@@ -169,4 +169,126 @@ html, body{
    box-shadow: 0px 2px 0px 0px #B2783D;
  }
 
+ /* Benefits */
+
+ .benefits {
+   text-align: center;
+   display:block;
+   position:relative;
+ }
+ .benefits ul {
+   margin: 0 auto;
+   padding:4em 0;
+ }
+ .benefits ul li {
+   list-style-type: none;
+   display: inline-block;
+ }
+ .benefits i {
+   color:#2885B1;
+   font-size:60px;
+   margin:0;
+   vertical-align: middle;
+ }
+ .benefits h2 {
+   color:#000000;
+ }
+
+ .laptop {
+   display: block;
+   margin-bottom: 0;
+ }
+
+
+ /* Pricing */
+
+.pricing {
+   background: #7192A5 url("../images/checkered pricing.png") top center no-repeat;
+   background: url("../images/checkered pricing.png") top center no-repeat, rgba(113,145,165,0.32);
+   text-align: center;
+   padding:4em 0;
+ }
+ .pricing h2 {
+   color: #000000;
+   font-size: 48px
+ }
+
+ .pricing p {
+   color: #000000;
+   font-size: 16px;
+ }
+ .pricing ul {
+   margin:0 auto;
+   padding:2em 0;
+ }
+ .pricing ul li {
+   list-style-type: none;
+ }
+
+.box {
+   padding:0 15px 15px;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   min-height: 439px;
+   position: relative;
+   margin-top: 25px;
+ }
+ .box.middle {
+   min-height: 485px;
+   margin-top:0px;
+ }
+ .box h3 {
+   font-family: "Rokkitt", Helvetica, Arial, sans-serif;
+   font-weight: 600;
+   text-transform: uppercase;
+   background: #2885B1;
+   color: #FFFFFF;
+   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
+   left:0;
+   right:0;
+   top:0;
+   text-align: center;
+   margin:0 -15px 40px;
+   padding:10px 0;
+ }
+
+ .box h4 {
+   font-size:50px;
+   font-weight: normal;
+   margin:40px 0 10px;
+   color:#000000;
+ }
+ .box h4 span {
+   font-size:32px;
+   vertical-align: top;
+ }
+ .box h4 span.month {
+   font-family: "Rokkitt", Helvetica, Arial, sans-serif;
+   font-weight: 100;
+   color:#888888;
+   font-size:20px;
+   vertical-align: middle;
+ }
+ .box ul li {
+   font-size:18px;
+   margin-bottom:20px;
+   font-weight: 100;
+ }
+
+ .box .btn {
+   position:absolute;
+   bottom:20px;
+   left:20px;
+   right:20px;
+ }
+ .small {
+   font-size: 16px;
+   color: #FEFEFE;
+   line-height: 15px;
+ }
+
+
+
+
+
  
