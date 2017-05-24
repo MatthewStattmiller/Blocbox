@@ -197,6 +197,7 @@ html, body{
 
  .laptop {
    display: absolute;
+   overflow: scroll;
 
  }
 
