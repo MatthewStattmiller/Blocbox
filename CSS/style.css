@@ -106,8 +106,8 @@ html, body{
  header {
    height: 800px;
    color:#FFFFFF;
-   background: #FFFFFF url("../images/background.png") top center no-repeat;
-   background: url("../images/background.png") top center no-repeat, linear-gradient(0deg, rgba(51,73,94,0.50) 0%, #2885B1 92%);
+   background: #FFFFFF url("../Images/background.png") top center no-repeat;
+   background: url("../Images/background.png") top center no-repeat, linear-gradient(0deg, rgba(51,73,94,0.50) 0%, #2885B1 92%);
    background-size:cover;
  }
 
@@ -205,8 +205,8 @@ html, body{
  /* Pricing */
 
 .pricing {
-   background: #7192A5 url("../images/checkered pricing.png") top center no-repeat;
-   background: url("../images/checkered pricing.png") top center no-repeat, rgba(113,145,165,0.32);
+   background: #7192A5 url("../Images/checkered pricing.png") top center no-repeat;
+   background: url("../Images/checkered pricing.png") top center no-repeat, rgba(113,145,165,0.32);
    text-align: center;
    padding:4em 0;
  }
@@ -471,12 +471,13 @@ html, body{
    display:block;
    height:230px;
    background: #FFFFFF;
-   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.50);
+   box-shadow: 0 1px 3px 0 rgba(40,133,177,31);
    position: relative;
    overflow: hidden;
    padding:20px;
    
  }
+
 
  /* Larger Mobile Devices */
  @media (min-width:460px) {
