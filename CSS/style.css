@@ -455,7 +455,7 @@ html, body{
    font-size: 36px;
    color: #3498DB;
    line-height: 44px;
-   float: left;
+   float: left; 
    display:inline-block;
  }
  .content .header > a {
