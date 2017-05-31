@@ -66,6 +66,8 @@ html, body{
    .one-fourth {
      width:21%;
    }
+ 
+
  }
 
  @media (min-width: 768px) {
@@ -81,6 +83,8 @@ html, body{
    .one-fourth {
      width:21%;
    }
+
+
  }
  @media (min-width: 992px) {
    .container {
@@ -152,7 +156,7 @@ html, body{
  }
  header .hero p {
    font-size: 24px;
-   line-height: 26px;
+   line-height: 28px;
    font-weight: 100;
    margin:10px 0 40px;
  }
@@ -196,9 +200,7 @@ html, body{
  }
 
  .laptop {
-   display: absolute;
-   overflow: scroll;
-
+      overflow: scroll;
  }
 
 
@@ -208,7 +210,7 @@ html, body{
    background: #7192A5 url("../Images/checkered pricing.png") top center no-repeat;
    background: url("../Images/checkered pricing.png") top center no-repeat, rgba(113,145,165,0.32);
    text-align: center;
-   padding:4em 0;
+   padding:2em 0;
  }
  .pricing h2 {
    color: #000000;
@@ -298,9 +300,10 @@ html, body{
       #F2F2F2 0%, #F2F2F2 50%, #2885B1 50%, #2885B1 100%);
    color: #FFFFFF;
    height: 150px;
-   position: relative;
+   position: absolute;
    overflow: hidden;
    z-index: 0;
+   width: 100%;
  }
  footer p, footer nav ul {
    font-size:14px;
@@ -344,23 +347,80 @@ html, body{
    }
  }
 
+@media (min-width: 400px){
+   footer{
+     background-color: #F2F2F2;
+     background-image: linear-gradient(to left,
+        #F2F2F2 0%, #F2F2F2 33.33337%, #2885B1 33.33337%, #2885B1 100%);
+     height: 88px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #F2F2F2;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+
+   }
+ }
+
+
  /* dashboard */
 
  .dashboard {
    background:#F2F2F2;
  }
  .left-nav {
-   height: 100vh;
-   width:14.66666667%;
-   color:#FFFFFF;
-   
+   color: #FFFFFF;
+   height: 100%;
+   width: 280px;
+   box-shadow: 1px 0 4px 0 rgba(0,0,0,0.50);
+   position: absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+   -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+   -o-transform: translate(-280px,0); /** Opera **/
+   -moz-transform: translate(-280px,0); /** Firefox **/
+   }
+  .left-nav.open {
+   display:block;
+   position: fixed;
+   height: 100%;
+   width:280px;
    background: #FFFFFF;
    background-image: linear-gradient(0deg, rgba(51,73,94,0.50) 0%, #2885B1 92%);
    box-shadow: 1px 0 4px 0 rgba(0,0,0,0.50);
-   float:left;
-   position: fixed;
-   display:block;
- }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+  -webkit-transform: translate(0,0); /** Chrome & Safari **/
+  -o-transform: translate(0,0); /** Opera **/
+  -moz-transform: translate(0,0); /** Firefox **/
+  z-index: 100;
+  }
+
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#2885B1;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+   }
+ 
+
  .left-nav .site-logo {
    padding:20px 0;
    display:block;
@@ -404,10 +464,38 @@ html, body{
  }
 
 
+
+@media (min-width:992px) {
+  .left-nav {
+  height: 100vh;
+  width:14.66666667%;
+  color:#FFFFFF;
+  background: #FFFFFF;
+  background-image: linear-gradient(0deg, rgba(51,73,94,0.50) 0%, #2885B1 92%);
+  box-shadow: 1px 0 4px 0 rgba(0,0,0,0.50);
+  position: fixed;
+  display:block;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0); /** Chrome & Safari **/
+  -o-transform: translate(0,0); /** Opera **/
+  -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .left-nav.open {
+  width:14.66666667%;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0); /** Chrome & Safari **/
+  -o-transform: translate(0,0); /** Opera **/
+  -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .hamburger {
+  display:none;
+  }
+ }
+
+
  /* LEFT NAVBAR SETTINGS */
  .left-nav .settings {
    position:absolute;
-   
    width:100%;
    bottom:0;
    left:0;
@@ -450,7 +538,7 @@ html, body{
  }
  .content .header h1 {
    font-family: "Rokkitt", Helvetica, Arial, sans-serif;
-   font-weight: 100;
+   font-weight: lighter;
    margin:0 0 30px;
    font-size: 36px;
    color: #3498DB;
